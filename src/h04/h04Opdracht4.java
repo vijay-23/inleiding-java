@@ -16,13 +16,13 @@ public class h04Opdracht4 extends Applet {
         g.drawLine(60,250,300,250);
 
         g.setColor(Color.red);
-        g.fillRect(61, 170, 75, 80);
+        g.fillRect(61, 180, 75, 70);
 
         g.setColor(Color.blue);
-        g.fillRect(136,150,75,100);
+        g.fillRect(136,75,75,175);
 
         g.setColor(Color.orange);
-        g.fillRect(211,100,75,150);
+        g.fillRect(211,110,75,140);
 
         g.setColor(Color.black);
         g.drawString("Valerie", 76,262);
