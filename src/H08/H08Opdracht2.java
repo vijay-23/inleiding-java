@@ -7,34 +7,50 @@ import java.awt.event.ActionListener;
 
 public class H08Opdracht2 extends Applet {
 
-    TextField tekstvak;
-    Button knop;
+    Button knop1;
     Button knop2;
+    Button knop3;
+    Button knop4;
+    Button knop5;
     Label label;
 
-    double bedragonafgerond;
-    double bedragx10;
-    int bedragint;
-    double bedrag;
+    int mannen;
+    int vrouwen;
+    int mannelijkestudenten;
+    int vrouwelijkestudenten;
+    int totaalaantal;
 
     public void init() {
-        label = new Label("Vul het gewenste bedrag in:");
-        add(label);
-        tekstvak = new TextField("", 30);
 
-        knop = new Button("bereken");
-        knop2 = new Button("reset");
-        knop2.addActionListener(new ResetButtonListener());
-        knop.addActionListener(new KnopListener());
-        add(tekstvak);
-        add(knop);
+        knop1 = new Button("Mannen");
+        knop2 = new Button("Vrouwen");
+        knop3 = new Button("Mannelijke studenten");
+        knop4 = new Button("Vrouwelijke studenten");
+        knop5 = new Button("reset");
+        knop5.addActionListener(new ResetButtonListener());
+        knop4.addActionListener(new knop4Listener());
+        knop3.addActionListener(new knop3Listener());
+        knop2.addActionListener(new knop2Listener());
+        knop1.addActionListener(new Knop1Listener());
+        totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen +vrouwen;
+
+
+        add(knop1);
         add(knop2);
+        add(knop3);
+        add(knop4);
+        add(knop5);
 
     }
 
     public void paint(Graphics g) {
 
-        g.drawString("" + bedrag, 50, 100);
+        g.drawString("Totaal aantal = " + totaalaantal, 50, 270);
+        g.drawString("Mannen = " + mannen, 50, 100);
+        g.drawString("Vrouwen = " + vrouwen, 50, 130);
+        g.drawString("Mannelijke studenten = " + mannelijkestudenten, 50, 160);
+        g.drawString("Vrouwelijke studenten = " + vrouwelijkestudenten, 50, 190);
+
 
     }
 
@@ -42,24 +58,58 @@ public class H08Opdracht2 extends Applet {
         super.repaint();
     }
 
-    class KnopListener implements ActionListener {
+    class Knop1Listener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            bedragonafgerond = Double.valueOf(tekstvak.getText());
 
-            bedragonafgerond = bedragonafgerond * 1.21;
-
-            bedragx10 = bedragonafgerond * 10;
-            bedragint = (int) bedragx10;
-            bedrag = (double) bedragint / 10;
-
+            mannen++;
+            totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
             repaint();
         }
     }
 
+    class knop2Listener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            vrouwen++;
+            totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
+            repaint();
+        }
+    }
+
+
+    class knop3Listener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+
+            mannelijkestudenten++;
+            totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
+            repaint();
+        }
+    }
+
+
+    class knop4Listener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+
+            vrouwelijkestudenten++;
+            totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
+            repaint();
+        }
+    }
+
+
     class ResetButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            tekstvak.setText("");
-            bedrag = 0;
+
+            mannelijkestudenten = 0;
+            vrouwelijkestudenten = 0;
+            mannen = 0;
+            vrouwen = 0;
+            totaalaantal = 0;
             repaint();
         }
     }
