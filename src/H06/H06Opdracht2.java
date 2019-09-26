@@ -12,9 +12,6 @@ public class H06Opdracht2 extends Applet {
         uur = 60*60;
         dag = (60*60)*24;
         jaar = (3600*24)*365;
-
-
-
     }
     public void paint(Graphics g) {
 
