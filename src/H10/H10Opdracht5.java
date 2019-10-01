@@ -8,13 +8,7 @@ import java.awt.event.ActionListener;
 
 public class H10Opdracht5 extends Applet {
 
-    double getalA;
-    double getalB;
-    double getalC;
-    double getalD;
-    double getalE;
     double gemiddelde;
-    double ingevoerdeWaarde;
     double input1;
     double input2;
     double input3;
@@ -22,8 +16,6 @@ public class H10Opdracht5 extends Applet {
     double input5;
 
     String state;
-
-
     TextField tekstvakA;
     TextField tekstvakB;
     TextField tekstvakC;
@@ -32,39 +24,29 @@ public class H10Opdracht5 extends Applet {
     Button bereken;
     Button reset;
 
-
     public void init() {
         tekstvakA = new TextField(4);
-
         tekstvakB = new TextField(4);
-
         tekstvakC = new TextField(4);
-
         tekstvakD = new TextField(4);
-
         tekstvakE = new TextField(4);
 
         add(tekstvakA);
-
         add(tekstvakB);
-
         add(tekstvakC);
-
         add(tekstvakD);
-
         add(tekstvakE);
+
         bereken = new Button("bereken");
         bereken.addActionListener(new ButtonListener());
         reset = new Button("reset");
         reset.addActionListener(new ButtonListener());
         add(bereken);
         add(reset);
-
     }
 
     public void paint(Graphics g) {
         g.drawString("Het gemiddelde is: " + gemiddelde + " dus de leerling is " + state, 50, 50);
-
     }
 
     class ButtonListener implements ActionListener {
