@@ -6,17 +6,16 @@ import java.awt.*;
 public class H11Opdracht1 extends Applet {
 
 
-    public void paint(Graphics g) {
-        g.drawLine(20,20,20,200);
-        g.drawLine(40,20,40,200);
-        g.drawLine(60,20,60,200);
-        g.drawLine(80,20,80,200);
-        g.drawLine(100,20,100,200);
-        g.drawLine(120,20,120,200);
-        g.drawLine(140,20,140,200);
-        g.drawLine(160,20,160,200);
-        g.drawLine(180,20,180,200);
-        g.drawLine(200,20,200,200);
+    public void init( ) {}
 
+    public void paint(Graphics g) {
+        int teller;
+        int y = 0;
+        int y1 = 200;
+        int x = 10;
+        for (teller = 0; teller < 10; teller++) {
+            x += 50;
+            g.drawLine(x, y, x, y1);
+            }
+        }
     }
-}
