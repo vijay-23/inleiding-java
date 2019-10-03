@@ -12,7 +12,7 @@ public class H11Opdracht2 extends Applet {
         int teller;
         int y = 0;
 
-        for (teller = 10; teller <20; teller++) {
+        for (teller = 20; teller > 10; teller--) {
             y+= 20;
             g.drawString("" + teller, 50, y );
         }
