@@ -3,19 +3,19 @@ package H11;
 import java.applet.Applet;
 import java.awt.*;
 
-public class H11Opdracht6 extends Applet {
+public class H11Opdracht7 extends Applet {
 
     public void init() {
         setSize(500,500);
     }
     int count;
-    int x = 100;
-    int y = 100;
-    int width = 50;
-    int height = 50;
+    int x = 10;
+    int y = 10;
+    int width = 500;
+    int height = 500;
     public void paint(Graphics g) {
 
-        for (count = 0; count < 5; count++) {
+        for (count = 0; count < 50; count++) {
             g.drawOval(x,y,width,height);
 
 
@@ -29,3 +29,5 @@ public class H11Opdracht6 extends Applet {
 
     }
 }
+
+
