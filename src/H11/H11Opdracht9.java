@@ -5,123 +5,45 @@ import java.awt.*;
 
 public class H11Opdracht9 extends Applet {
 
-    public void init() {}
+    public void init() {
+        setSize(500,500);}
 
     public void paint(Graphics g) {
         int x = 50;
         int y = 50;
         int width = 50;
         int height = 50;
+        for (int rows = 0; rows < 4; rows++) {
+            g.drawRect(x, y, width, height);
 
-        for (int column= 0; column < 8; column++) {
-            g.drawRect(x,y,width,height);
-
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.black);
-                g.fillRect(x,y,width,height);
-            } else {
-                g.setColor(Color.white);
-
+            // REGEL 1
+            for (int column = 0; column < 8; column++) {
+                g.drawRect(x, y, width, height);
+                if (column == 0 || column == 2 || column == 4 || column == 6) {
+                    g.setColor(Color.black);
+                    g.fillRect(x, y, width, height);
+                } else {
+                    g.setColor(Color.white);
+                }
+                x += width;
             }
-            x += width;}
+            x = 50;
+            y += height;
 
-        //tweede rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 ||column == 4 || column == 6) {
-                g.setColor(Color.white);
-                g.fillRect(x, y, width, height);
-            } else {
+            // REGEL 2
+            for (int column = 0; column < 8; column++) {
                 g.setColor(Color.black);
-                g.fillRect(x,y,width,height);
+                g.drawRect(x, y, width, height);
+                if (column == 0 || column == 2 || column == 4 || column == 6) {
+                    g.setColor(Color.white);
+                } else {
+                    g.setColor(Color.black);
+                    g.fillRect(x, y, width, height);
+                }
+                x += width;
             }
-            x += width;
-        }
-        //derde rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.black);
-                g.fillRect(x, y, width, height);
-            } else {
-                g.setColor(Color.white);
-                g.fillRect(x,y,width,height);
-            }
-            x += width;
-        }
-        //vierde rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.white);
-                g.fillRect(x, y, width, height);
-            } else {
-                g.setColor(Color.black);
-                g.fillRect(x,y,width,height);
-            }
-            x += width;
-        }
-        //vijfde rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.black);
-                g.fillRect(x, y, width, height);
-            } else {
-                g.setColor(Color.white);
-                g.fillRect(x,y,width,height);
-            }
-            x += width;
-        }
-        //6de rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.white);
-                g.fillRect(x, y, width, height);
-            } else {
-                g.setColor(Color.black);
-                g.fillRect(x,y,width,height);
-            }
-            x += width;
-        }
-        //7de rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.black);
-                g.fillRect(x, y, width, height);
-            } else {
-                g.setColor(Color.white);
-                g.fillRect(x,y,width,height);
-            }
-            x += width;
-        }
-        //8ste rij//
-        x = 50;
-        y += height;
-
-        for (int column=0; column < 8; column++) {
-            if (column == 0 || column == 2 || column == 4 || column == 6) {
-                g.setColor(Color.white);
-                g.fillRect(x, y, width, height);
-            } else {
-                g.setColor(Color.black);
-                g.fillRect(x,y,width,height);
-            }
-            x += width;
+            x = 50;
+            y += height;
         }
     }
 }
