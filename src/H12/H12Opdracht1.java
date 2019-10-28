@@ -4,7 +4,6 @@ import java.applet.Applet;
 import java.awt.*;
 
 public class H12Opdracht1 extends Applet {
-
     double numbers[];
     double total;
     double average;
