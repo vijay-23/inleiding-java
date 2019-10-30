@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class H12Opdracht4 extends Applet {
+public class H12Opdracht5 extends Applet {
 
     double[] numbers = { 100, 200, 500, 400, 300 };
     double searching;
@@ -19,6 +19,7 @@ public class H12Opdracht4 extends Applet {
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == searching) {
                 found = true;
+                break;
             }
         }
         textField = new TextField(5);
