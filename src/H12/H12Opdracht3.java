@@ -30,8 +30,7 @@ public class H12Opdracht3 extends Applet {
                 input[i] = Integer.valueOf(textFieldArray[i].getText());
             }
             Arrays.sort(input);
-            for (int i = 0; i < 5; i++) {
-                textFieldArray[i].setText(String.valueOf(input[i]));
+            for (int i = 0; i < 5; i++) { textFieldArray[i].setText(String.valueOf(input[i]));
             }
             repaint();
         }
