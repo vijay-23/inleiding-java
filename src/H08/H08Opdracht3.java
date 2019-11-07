@@ -29,13 +29,10 @@ public class H08Opdracht3 extends Applet {
         add(tekstvak);
         add(knop);
         add(knop2);
-
     }
 
     public void paint(Graphics g) {
-
         g.drawString("" + bedrag, 50, 100);
-
     }
 
     public void repaint() {
@@ -51,7 +48,6 @@ public class H08Opdracht3 extends Applet {
             bedragx10 = bedragonafgerond * 10;
             bedragint = (int) bedragx10;
             bedrag = (double) bedragint / 10;
-
             repaint();
         }
     }

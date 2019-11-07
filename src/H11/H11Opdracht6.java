@@ -14,18 +14,14 @@ public class H11Opdracht6 extends Applet {
     int width = 50;
     int height = 50;
     public void paint(Graphics g) {
-
         for (count = 0; count < 5; count++) {
             g.drawOval(x,y,width,height);
-
 
             y += 5;
             x += 5;
 
-
             height -= 10;
             width -= 10;
         }
-
     }
 }

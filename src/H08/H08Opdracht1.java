@@ -24,8 +24,6 @@ public class H08Opdracht1 extends Applet {
         add(tekstvak);
         add(knop);
         add(knop2);
-
-
     }
 
     public void paint(Graphics g) {

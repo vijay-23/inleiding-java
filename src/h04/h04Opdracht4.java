@@ -5,16 +5,16 @@ import java.applet.*;
 
 public class h04Opdracht4 extends Applet {
 
-
-    public void init() {
-    }
+    public void init() {}
 
     public void paint(Graphics g) {
         setBackground(Color.white);
         g.setColor(Color.black);
+        // COORDINATEN ASSEN //
         g.drawLine(60,60,60,250);
         g.drawLine(60,250,300,250);
 
+        //STAVEN MET GEGEVENS//
         g.setColor(Color.red);
         g.fillRect(61, 180, 75, 70);
 
@@ -33,6 +33,7 @@ public class h04Opdracht4 extends Applet {
         g.setColor(Color.black);
         g.drawString("Hans",231,262);
 
+        //SCHAALVERDELING//
         g.setColor(Color.black);
         g.drawString("0",50,255);
         g.drawString("20",42,220);
@@ -40,8 +41,5 @@ public class h04Opdracht4 extends Applet {
         g.drawString("60",42,150);
         g.drawString("80",42,115);
         g.drawString("100",36,80);
-
-
-
     }
 }

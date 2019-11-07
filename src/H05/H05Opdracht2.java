@@ -24,7 +24,6 @@ public class H05Opdracht2 extends Applet {
         g.drawLine(60,30,60,hoogteXas);
         g.drawLine(60,hoogteXas,300,hoogteXas);
 
-
         //Gegevens van staven
         g.setColor(Color.red);
         //g.fillRect(61, gewichtValerie, 75, 30);
@@ -54,13 +53,6 @@ public class H05Opdracht2 extends Applet {
         g.drawString("60",42,135);
         g.drawString("80",42,95);
         g.drawString("100",36,55);
-
-
-
-
-
-
-
     }
 }
 

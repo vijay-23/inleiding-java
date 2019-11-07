@@ -13,7 +13,6 @@ public class H11Opdracht3 extends Applet {
         int teller;
         int y = 0;
 
-
         for (teller = 0; teller < 30; teller++) {
             y+= 20;
             g.drawString("" + nummer1, 50, y );

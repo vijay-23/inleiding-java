@@ -16,7 +16,6 @@ public class H10Opdracht4 extends Applet {
     TextField tekstvak2;
     String tekst2;
 
-
     public void init() {
         tekstvak2 = new TextField(4);
         tekstvak2.addActionListener(new TextListener());

@@ -5,8 +5,7 @@ import java.applet.*;
 
 public class h04Opdracht5 extends Applet {
 
-    public void init() {
-}
+    public void init() {}
 
     public void paint(Graphics g) {
         setBackground(Color.blue);

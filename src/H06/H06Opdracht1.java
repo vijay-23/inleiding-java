@@ -7,7 +7,6 @@ public class H06Opdracht1 extends Applet {
 
     double Jan, Ali,Jeannette,Vijay,Totaalbedrag;
 
-
     public void init() {
         Jan = Totaalbedrag/4;
         Ali = Totaalbedrag/4;
@@ -15,8 +14,6 @@ public class H06Opdracht1 extends Applet {
         Vijay = Totaalbedrag/4;
 
         Totaalbedrag = 113;
-
-
     }
     public void paint(Graphics g) {
         g.drawString("Totaalbedrag = " + Totaalbedrag, 30, 20);

@@ -5,8 +5,7 @@ import java.applet.*;
 
 public class PraktijkOpdracht extends Applet {
 
-    public void init() {
-    }
+    public void init() {}
 
     public void paint(Graphics g) {
         setBackground(Color.white);
@@ -46,7 +45,5 @@ public class PraktijkOpdracht extends Applet {
         //CIRKEL
         g.drawOval(475,190,100,100);
         g.drawString("Cirkel",510,305);
-
-
     }
 }

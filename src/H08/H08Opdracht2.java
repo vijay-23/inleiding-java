@@ -21,7 +21,6 @@ public class H08Opdracht2 extends Applet {
     int totaalaantal;
 
     public void init() {
-
         knop1 = new Button("Mannen");
         knop2 = new Button("Vrouwen");
         knop3 = new Button("Mannelijke studenten");
@@ -34,24 +33,19 @@ public class H08Opdracht2 extends Applet {
         knop1.addActionListener(new Knop1Listener());
         totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen +vrouwen;
 
-
         add(knop1);
         add(knop2);
         add(knop3);
         add(knop4);
         add(knop5);
-
     }
 
     public void paint(Graphics g) {
-
         g.drawString("Totaal aantal = " + totaalaantal, 50, 270);
         g.drawString("Mannen = " + mannen, 50, 100);
         g.drawString("Vrouwen = " + vrouwen, 50, 130);
         g.drawString("Mannelijke studenten = " + mannelijkestudenten, 50, 160);
         g.drawString("Vrouwelijke studenten = " + vrouwelijkestudenten, 50, 190);
-
-
     }
 
     public void repaint() {
@@ -60,7 +54,6 @@ public class H08Opdracht2 extends Applet {
 
     class Knop1Listener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
             mannen++;
             totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
             repaint();
@@ -68,39 +61,28 @@ public class H08Opdracht2 extends Applet {
     }
 
     class knop2Listener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
-
             vrouwen++;
             totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
             repaint();
         }
     }
 
-
     class knop3Listener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
-
-
             mannelijkestudenten++;
             totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
             repaint();
         }
     }
 
-
     class knop4Listener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
-
-
             vrouwelijkestudenten++;
             totaalaantal = mannelijkestudenten + vrouwelijkestudenten + mannen + vrouwen;
             repaint();
         }
     }
-
 
     class ResetButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {

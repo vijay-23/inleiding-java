@@ -17,8 +17,6 @@ public class h02Opdracht2 extends Applet {
         achternaam = "Hoelas";
         setSize(300,300);
         setBackground(Color.white);
-
-
     }
 
     public void paint(Graphics g) {

@@ -26,7 +26,6 @@ public class H10Opdracht1 extends Applet {
     public void paint(Graphics g) {
         g.drawString("Hoogste getal: "+ maxInput,40,100);
         g.drawString("Laagste getal: " + minInput, 40,130);
-
     }
 
     class TextListener implements ActionListener {
@@ -48,4 +47,3 @@ public class H10Opdracht1 extends Applet {
             }
         }
     }
-

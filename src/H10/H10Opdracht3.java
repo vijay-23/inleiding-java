@@ -13,7 +13,6 @@ public class H10Opdracht3 extends Applet {
     String maandnaam;
     Label label;
 
-
     public void init() {
     tekstvak = new TextField(10);
     tekstvak.addActionListener(new TextListener());

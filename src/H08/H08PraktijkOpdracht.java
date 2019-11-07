@@ -16,6 +16,7 @@ public class H08PraktijkOpdracht extends Applet {
         double antwoord;
         double input1;
         double input2;
+
         public void init() {
             tekstvak1 = new TextField("", 5);
             tekstvak2 = new TextField("", 5);
@@ -37,8 +38,7 @@ public class H08PraktijkOpdracht extends Applet {
             add(keer);
             add(knop5);
         }
-    public void paint(Graphics g) {
-        }
+    public void paint(Graphics g) {}
         class plusListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
                 input1 = Double.valueOf(tekstvak1.getText());

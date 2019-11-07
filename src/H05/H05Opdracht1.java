@@ -62,7 +62,5 @@ public class H05Opdracht1 extends Applet {
         //CIRKEL
         g.drawOval(475,190,breedte2,hoogte2);
         g.drawString("Cirkel",510,305);
-
-
     }
 }

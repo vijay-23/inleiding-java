@@ -54,4 +54,3 @@ public class H12PraktijkOpdracht extends Applet {
         }
     }
 }
-

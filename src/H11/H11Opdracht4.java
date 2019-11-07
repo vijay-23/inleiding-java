@@ -13,12 +13,10 @@ public class H11Opdracht4 extends Applet {
         int teller;
         int y = 0;
 
-
         for (teller = 0; teller <= 10; teller++) {
             y+= 20;
             resultaat = (nummer1*keer)*teller;
             g.drawString("" + resultaat, 50, y );
-
         }
     }
 }

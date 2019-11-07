@@ -13,7 +13,6 @@ public class H11Opdracht8 extends Applet {
     int height = 20;
 
     public void paint(Graphics g) {
-
         for (count = 0; count < 100; count++) {
             g.drawOval(x, y, width, height);
 

@@ -5,7 +5,6 @@ import java.applet.*;
 
 public class H06PraktijkOpdracht extends Applet {
 
-
     double getalA;
     double getalB;
     double getalC;
@@ -14,9 +13,7 @@ public class H06PraktijkOpdracht extends Applet {
     int gemiddelde3;
     double afgerondGemiddelde;
 
-
     public void init() {
-
         getalA = 5.9;
         getalB = 6.3;
         getalC = 6.9;
@@ -26,14 +23,9 @@ public class H06PraktijkOpdracht extends Applet {
         gemiddelde3= (int) (gemiddelde2/10);
         gemiddelde3= (int) afgerondGemiddelde;
         afgerondGemiddelde = (int)gemiddelde;
-
     }
     public void paint(Graphics g) {
-
         g.drawString( "Gemiddelde="+gemiddelde,20,40);
         g.drawString(" Het gemiddelde is="+(int)gemiddelde,20,60);
-
-
     }
 }
-
